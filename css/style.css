@@ -1,0 +1,134 @@
+/*li::before
+{
+    content: "x ";
+}
+li
+{
+    list-style-type: none;
+    display: inline;
+    margin: 5px;
+}*/
+
+/* Общие стили */
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+}
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+article, figure, footer, header, nav, section 
+{
+    display: block;
+}
+ul 
+{
+    
+}
+a 
+{
+text-decoration: none;
+}
+/* Шапка */
+header 
+{
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    height: 70px;
+}
+/* Меню*/
+.logo 
+{
+    display: block;
+    float: left;
+    padding: 15px;
+}
+.menu 
+{
+    float: right;
+}
+.menu li 
+{
+    display: inline-block;
+}
+.menu a 
+{
+    text-transform: uppercase;
+    display: block;
+    color: rgb(0, 7, 7);
+    padding: 25px;
+}
+.menu a:hover 
+{
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
+/* Основное содержимое */
+.container 
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+/* Футер */
+footer 
+{
+    margin-top: 30px;
+    height: 80px;
+    line-height: 75px;
+    background-color: rgb(226, 226, 226);
+}
+.row 
+{
+    display: flex;
+}
+.col-two
+{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.col-three 
+{
+    width: 33.3333333333%;
+    float: left;
+    text-align: center;
+}
+.col-four
+{
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+h1
+{
+    font-size: 50px;
+    line-height: 80px;
+}
+h2
+{
+    margin: 0px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 80px;
+}
+.fab
+{
+    font-size: 30px;
+    padding: 15px;
+    padding-top: 25px;
+}
+a
+{
+    color: blue;
+}
+a:hover
+{
+    color: rgb(82, 82, 255);
+}
