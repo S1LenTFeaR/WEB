@@ -1,14 +1,3 @@
-/*li::before
-{
-    content: "x ";
-}
-li
-{
-    list-style-type: none;
-    display: inline;
-    margin: 5px;
-}*/
-
 /* Общие стили */
 body
 {
@@ -20,14 +9,6 @@ body
 {
     margin: 0;
     padding: 0;
-}
-article, figure, footer, header, nav, section 
-{
-    display: block;
-}
-ul 
-{
-    
 }
 a 
 {
@@ -73,7 +54,7 @@ header
 .container 
 {
     margin: 0 auto;
-    width: 100%;
+    max-width: 90%;
     max-width: 960px;
 }
 /* Футер */
@@ -87,24 +68,21 @@ footer
 .row 
 {
     display: flex;
+    flex-wrap: wrap;
+}
+[class*='col-'] 
+{
+    float: left;
 }
 .col-two
 {
     width: 50%;
-    float: left;
     text-align: left;
 }
 .col-three 
 {
     width: 33.3333333333%;
-    float: left;
     text-align: center;
-}
-.col-four
-{
-    width: 25%;
-    float: left;
-    text-align: left;
 }
 h1
 {
@@ -132,3 +110,135 @@ a:hover
 {
     color: rgb(82, 82, 255);
 }
+@media (max-width: 1024px) 
+{
+    [class*='col-'] 
+    {
+        float: left;
+    }
+    /* Ширину класса container делаем резиновой */
+    .container 
+    {
+        max-width: 80%;
+    }
+    /* Расположение блоков в footer делаем в одну колонку */
+    .col-two
+    {
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+    .col-three 
+    {
+        width: 50%;
+        text-align: center;
+    }
+    footer .col-three
+    {
+        width: 33.3%;
+    }
+    footer 
+    {
+        margin-top: 30px;
+        text-align: center;
+        line-height: 75px;
+        background-color: rgb(226, 226, 226);
+    }
+}
+@media (max-width: 768px) 
+{
+    [class*='col-'] 
+    {
+        float: left;
+        padding-top: 30px;
+    }
+    /* Ширину класса container делаем резиновой */
+    .container 
+    {
+        max-width: 85%;
+    }
+    /* Расположение блоков в footer делаем в одну колонку */
+    .col-three 
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .col-two
+    {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+    footer .col-three 
+    {
+        width: 100%;
+        margin: auto;
+    }
+    footer 
+    {
+        margin-top: 30px;
+        height: auto;
+        line-height: 75px;
+        background-color: rgb(226, 226, 226);
+    }
+    h2
+    { 
+        margin: auto; 
+    }
+    .menu a 
+    {
+        padding: 25px 15px;
+    }
+}
+@media (max-width: 480px) 
+{
+    [class*='col-'] 
+    {
+        float: left;
+        padding-top: 25px;
+    }
+    /* Ширину класса container делаем резиновой */
+    .container 
+    {
+        max-width: 90%;
+    }
+    /* Расположение блоков в footer делаем в одну колонку */
+    .col-three 
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .col-two
+    {
+        text-align: center;
+        width: 100%;
+    }
+    footer 
+    {
+        text-align: center;
+        margin-top: 30px;
+        height: auto;
+        line-height: 75px;
+        background-color: rgb(226, 226, 226);
+    }
+    footer .col-three
+    {
+        width: 100%;
+        margin: auto;
+    }
+    h2 
+    { 
+        margin: auto; 
+    }
+    .menu a 
+    {
+        padding: 25px 5px;
+        font-size: 15px;
+    }
+}
+    footer .col-three
+    {
+        padding-top: 0px;
+    }
