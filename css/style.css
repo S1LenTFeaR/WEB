@@ -20,15 +20,6 @@ a
     text-decoration: none;
 }
 
-/* Шапка */
-header {
-background-color: rgb(226, 226, 226);
-width: 100%;
-margin-bottom: 30px;
-position: relative;
-height: 70px;
-}
-
 /* Меню*/
 .logo {
 display: block;
@@ -44,32 +35,11 @@ float: right;
 display: inline-block;
 }
 
-.menu a {
-text-transform: uppercase;
-display: block;
-color: rgb(0, 7, 7);
-padding: 25px;
-}
-
-.menu a:hover,
-#current_page_item {
-color: #fff;
-background-color: rgb(0, 0, 0);
-}
-
 /* Основное содержимое */
 .container {
 margin: 0 auto;
 max-width: 90%;
 max-width: 960px;
-}
-
-/* Футер */
-footer {
-margin-top: 30px;
-height: 80px;
-line-height: 75px;
-background-color: rgb(226, 226, 226);
 }
 
 .row {
@@ -79,16 +49,6 @@ flex-wrap: wrap;
 
 [class*='col-'] {
 float: left;
-}
-
-.col-two {
-width: 50%;
-text-align: left;
-}
-
-.col-three {
-width: 33.3333333333%;
-text-align: center;
 }
 
 h1 {
@@ -107,14 +67,6 @@ line-height: 80px;
 font-size: 30px;
 padding: 15px;
 padding-top: 25px;
-}
-
-a {
-color: blue;
-}
-
-a:hover {
-color: rgb(82, 82, 255);
 }
 
 @media (max-width: 1024px) 
@@ -225,19 +177,7 @@ color: rgb(82, 82, 255);
         max-width: 90%;
     }
 
-    /* Расположение блоков в footer делаем в одну колонку */
-    .col-three 
-    {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    .col-two 
-    {
-        text-align: center;
-        width: 100%;
-    }
+    /* Расположение блоков в footer делаем в одну колонку (перенесено в less)*/
 
     footer 
     {
@@ -269,16 +209,6 @@ color: rgb(82, 82, 255);
 footer .col-three 
 {
     padding-top: 0px;
-}
-
-.bookmark 
-{
-    color: blue;
-}
-
-.added 
-{
-    color: #FF4F00;
 }
 
 .bookmark-list a 
