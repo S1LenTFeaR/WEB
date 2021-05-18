@@ -1,0 +1,63 @@
+/* Переменные с цветами */
+/* Цветовое оформление */
+a {
+  color: blue;
+}
+a:hover {
+  color: #5252ff;
+}
+header {
+  background-color: #e2e2e2;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  height: 70px;
+}
+/* Вложенность */
+.menu a {
+  text-transform: uppercase;
+  display: block;
+  color: #000707;
+  padding: 25px;
+}
+.menu a:hover {
+  color: #fff;
+  background-color: #000000;
+}
+#current_page_item {
+  color: #fff;
+  background-color: #000000;
+}
+footer {
+  margin-top: 30px;
+  height: 80px;
+  line-height: 75px;
+  background-color: #e2e2e2;
+}
+.bookmark {
+  color: blue;
+}
+.added {
+  color: #FF4F00;
+}
+/* Примесь с параметрами */
+.col-two {
+  width: 50%;
+  text-align: left;
+}
+.col-three {
+  width: 33.33333333%;
+  text-align: center;
+}
+/* Примесь без параметров */
+@media (max-width: 480px) {
+  .col-three {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .col-two {
+    width: 100%;
+    text-align: center;
+  }
+}

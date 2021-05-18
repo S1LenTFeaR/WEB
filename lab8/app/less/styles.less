@@ -1,0 +1,109 @@
+/* Переменные с цветами */
+@a-color: blue;
+@aHov-color: rgb(82, 82, 255);
+@header-color: rgb(226, 226, 226);
+@menuText-color: rgb(0, 7, 7);
+@menuTextHov-color: #fff;
+@menuButtonHov-color: rgb(0, 0, 0);
+@menuFooter-color: rgb(226, 226, 226);
+@bookmark-color: blue;
+@added-color: #FF4F00;
+
+/* Цветовое оформление */
+a
+{
+    color: @a-color;
+}
+
+a:hover
+{
+    color: @aHov-color;
+}
+
+header 
+{
+    background-color: @header-color;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    height: 70px;
+}
+
+/* Вложенность */
+.menu
+{
+    a 
+    {
+        text-transform: uppercase;
+        display: block;
+        color: @menuText-color;
+        padding: 25px;
+    }
+    a:hover
+    {
+        color: @menuTextHov-color;
+        background-color: @menuButtonHov-color;
+    }
+}
+
+#current_page_item 
+{
+    color: @menuTextHov-color;
+    background-color: @menuButtonHov-color;
+}
+
+footer 
+{
+    margin-top: 30px;
+    height: 80px;
+    line-height: 75px;
+    background-color: @menuFooter-color;
+}
+
+.bookmark 
+{
+    color: @bookmark-color;
+}
+
+.added 
+{
+    color: @added-color;
+}
+
+/* Примесь с параметрами */
+.col (@width; @text-align)
+{
+    width: @width;
+    text-align: @text-align;
+}
+
+.col-two 
+{
+    .col(50%; left);
+}
+    
+.col-three 
+{
+    .col(33.3333333333%; center);
+}
+
+/* Примесь без параметров */
+.colMobile ()
+{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 480px) 
+{
+    .col-three 
+    {
+        float: none;
+        .colMobile();
+    }
+
+    .col-two 
+    {
+        .colMobile();
+    }
+}

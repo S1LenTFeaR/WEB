@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Название страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+    <script src="https://kit.fontawesome.com/53f5355402.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js" ></script>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <!-- Шапка сайта -->
+            <!-- Меню сайта -->
+            <a href="" class="logo">
+                <!-- Логотип с ссылкой на главную -->
+                <span><img src="images/Apple_logo_black.svg_.png" style="width: 40px;"></span>
+            </a>
+            <ul class="menu">
+                <!-- Ссылки на пункты меню -->
+                <li><a href="index.html" class="iphone" id="current_page_item">iPhone</a></li> <!-- Ссылка 1 -->
+                <li><a href="">iPad</a></li> <!-- Ссылка 2 и т.д. -->
+                <li><a href="blog.html" class="blog">Блог</a></li>
+            </ul>
+        </nav> <!-- Конец шапки -->
+    </header>
+    <section id="myBody">
+        <div class="container bookmark-list">
+            <span>Закладки:</span>
+        </div>
+
+        <section class="container">
+            <!--Блок раздела страницы с общей информацией -->
+            <h1>iPhone</h1>
+            <p>На этой странице имеющиеся в продаже iPhone</p>
+        </section> <!-- Конец блока -->
+
+        <section class="container">
+
+            <!-- Блок раздела статей -->
+            <article>
+                <article id="article_1">
+                    <!-- Блок статьи 1 -->
+                    <h2>iPhone12</h2>
+                    <!-- Блок статьи 1 -->
+                    <a class="bookmark" href="#">Добавить в закладки</a>
+                    <span class="divider"> | </span>
+                    <a class="details" href="#">Подробнее</a>
+                </article>
+                <div class="row content" id="article_1_content">
+                    <div class="col-three">
+                        <!-- Блок с исозбражением-->
+                        <figure>
+                            <img alt="" src="images/iPhone12.jfif" style="width: 250px;">
+                            <div>Смартфон Apple iPhone 12 128GB (черный)</div>
+                        </figure>
+                    </div><!-- Конец блока с исозбражением-->
+                    <div class="col-two">
+                        <p>Диагональ (дюйм): 6.1
+                            <br>Разрешение (пикс): 2532x1170
+                            <br>Встроенная память (Гб): 128
+                            <br>Фотокамера (Мп): 12 + 12 (двойная)
+                            <br>Оптический зум: x2
+                            <br><a href="">Все характеристики</a>
+                        </p>
+                        <div>
+                            <p>Дата старта продаж: 23.10.2020</p>
+                        </div>
+                    </div>
+                </div> <!-- Конец блока статьи -->
+            </article>
+            <article>
+                <article id="article_2">
+                    <!-- Блок статьи 1 -->
+                    <h2>iPhone SE 2020</h2>
+                    <!-- Блок статьи 1 -->
+                    <a class="bookmark" href="#">Добавить в закладки</a>
+                    <span class="divider"> | </span>
+                    <a class="details" href="#">Подробнее</a>
+                </article>
+                <div class="row content" id="article_2_content">
+                    <div class="col-three">
+                        <!-- Блок с исозбражением-->
+                        <figure>
+                            <img alt="" src="images/SE.jfif" style="width: 250px;">
+                            <div>Смартфон Apple iPhone SE 2020 64GB (черный)</div>
+                        </figure>
+                    </div><!-- Конец блока с исозбражением-->
+                    <div class="col-two">
+                        <p>Диагональ (дюйм): 4.7
+                            <br>Разрешение (пикс): 1334x750
+                            <br>Встроенная память (Гб): 64
+                            <br>Фотокамера (Мп): 12
+                            <br>Процессор: Apple A13 Bionic
+                            <br><a href="">Все характеристики</a>
+                        </p>
+                        <p>Дата старта продаж: 23.10.2020</p>
+                    </div>
+                </div> <!-- Конец блока статьи -->
+            </article>
+        </section> <!-- Конец блока раздела статей-->
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <!-- Подвал сайта -->
+
+            <!-- Контейнер для блоков подвала -->
+            <div class="col-three">
+                <!-- Первая колонка подвала -->
+                <span>Соц сети</span>
+            </div><!-- Конец колонки -->
+            <div class="col-three">
+                <!-- Вторая колонка подвала -->
+                <div>
+                    <!-- Ссылки на социальные сети -->
+                    <a title="VK" href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+                    <a title="Twitter" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div> <!-- Конец блока соц. сетей -->
+            </div><!-- Конец колонки -->
+            <div class="col-three">
+                <!-- Третья колонка подвала -->
+                <a href="">Связаться с нами</a> <!-- Ссылка на email -->
+            </div> <!-- Конец колонки -->
+        </div><!-- Конец контейнера -->
+    </footer> <!-- Конец подвала -->
+    <div class="kigdsab-godeav"><button class="casetug-posavun" id="contact" onmousedown="viewDiv()"><svg
+                class="b24-crm-button-icon b24-crm-button-icon-active" xmlns="http://www.w3.org/2000/svg" width="28"
+                height="28" viewBox="0 0 28 29">
+                <path class="b24-crm-button-chat-icon" fill="#FFFFFF" fill-rule="evenodd"
+                    d="M878.289968,975.251189 L878.289968,964.83954 C878.289968,963.46238 876.904379,962 875.495172,962 L857.794796,962 C856.385491,962 855,963.46238 855,964.83954 L855,975.251189 C855,976.924031 856.385491,978.386204 857.794796,978.090729 L860.589592,978.090729 L860.589592,981.876783 L860.589592,983.76981 L861.521191,983.76981 C861.560963,983.76981 861.809636,982.719151 862.45279,982.823297 L866.179185,978.090729 L875.495172,978.090729 C876.904379,978.386204 878.289968,976.924031 878.289968,975.251189 Z M881.084764,971.465135 L881.084764,976.197702 C881.43316,978.604561 879.329051,980.755508 876.426771,980.93027 L868.042382,980.93027 L866.179185,982.823297 C866.400357,983.946455 867.522357,984.94992 868.973981,984.716324 L876.426771,984.716324 L879.221567,988.502377 C879.844559,988.400361 880.153166,989.448891 880.153166,989.448891 L881.084764,989.448891 L881.084764,987.555864 L881.084764,984.716324 L882.947962,984.716324 C884.517696,984.949819 885.742758,983.697082 885.742758,981.876783 L885.742758,974.304675 C885.742659,972.717669 884.517597,971.465135 882.947962,971.465135 L881.084764,971.465135 Z"
+                    transform="translate(-855 -962)"></path>
+            </svg></button>
+    </div>
+    <div id="form-locked">
+        <div class="contact-form">
+            <button data-fancybox-close="" class="fancybox-close-small" id="close" title="Close"
+                onmousedown="closeDiv()"><i class="fas fa-times"></i></button>
+
+            <span>Готовы стать нашим клиентом?</span>
+            <input type="text" class="text" placeholder="Ваше имя" id="name">
+            <input id="online_phone" name="phone" type="tel" maxlength="50" autofocus="autofocus" required="required"
+                value="+7(___)___-__-__" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                placeholder="+7(___)___-__-__" class="text">
+            <div class="checkbox"><input type="checkbox" id="one" onclick="checkFluency()"> Я согласен на обработку
+                персональных данных</div>
+            <input type="submit" id="submit" value="Отправить" disabled="">
+        </div>
+    </div>
+</body>
+</html>
